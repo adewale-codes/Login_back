@@ -10,7 +10,8 @@ app = FastAPI(title="3-Level Image Password Auth API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Next.js dev server
+    allow_origins=["http://localhost:3000"],
+    allow_origins=["https://ade-login.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
